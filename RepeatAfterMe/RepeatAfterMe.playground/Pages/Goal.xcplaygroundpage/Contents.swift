@@ -34,8 +34,10 @@ for x in stride(from: 0, through: 360, by: 1){
 
 
 canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.white
 // Loop three times
-for i in 1...3 {
+for i in 1...36 {
     
     // Generate random number between -75 and 75
     let offset = Int(arc4random_uniform(10)) - 5
