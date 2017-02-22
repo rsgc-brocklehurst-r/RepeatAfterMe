@@ -37,7 +37,7 @@ canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.white
 // Loop three times
-for i in 1...36 {
+for i in 1...3 {
     
     // Generate random number between -75 and 75
     let offset = Int(arc4random_uniform(10)) - 5
@@ -48,6 +48,15 @@ for i in 1...36 {
 }
 
 // Modify code above as needed and continue writing code below as needed...
+canvas.drawShapesWithFill = false
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.black
+canvas.defaultBorderWidth = 1
+canvas.drawEllipse(centreX: 50, centreY: 310, width: 10, height: 10)
+for x in stride(from: 0, through: 100, by: 10){
+    canvas.drawEllipse(centreX: 50, centreY: 310, width: x, height: x)
+}
+
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
