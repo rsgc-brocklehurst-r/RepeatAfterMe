@@ -52,11 +52,13 @@ canvas.drawShapesWithFill = false
 canvas.drawShapesWithBorders = true
 canvas.borderColor = Color.black
 canvas.defaultBorderWidth = 1
-canvas.drawEllipse(centreX: 50, centreY: 310, width: 10, height: 10)
 for x in stride(from: 0, through: 100, by: 10){
     canvas.drawEllipse(centreX: 50, centreY: 310, width: x, height: x)
 }
 
+for p in stride(from: 0, through: 100, by: 10){
+    canvas.drawRectangle(bottomLeftX: 360 - p, bottomLeftY: 0, width: p, height: p)
+}
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
